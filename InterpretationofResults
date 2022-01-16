@@ -1,0 +1,18 @@
+**Assignment**
+The goal of the assignment is to make recommendations based on a movie. In my case, I selected the movie Fight Club as my favorite movie. Recommendations are made based on 1) summary of the movie 2) title of the movie 3) starring actors of the movie. This file is used to explain the methods used and results of this assignment
+
+**Files**
+The RSL directory contains the following files:
+-moviesFromMetacritic.csv: database retreived from Metacritic with information about movies
+-Recommender.sql: final assignment file containing all search queries and codes to generate recommendations
+-RecommenderSummary.sql, RecommenderTitle.sql, RecommenderStaring.sql: three seperate files to run the three recommendation scripts seperately
+-SummaryTop50Recommendations.csv, TitleTop50Recommendations.csv, StarringTop50Recommendations.csv: three csv files that store the results of the three recommendation scripts
+-Restart assignment: script to drop all tables if any mistakes are made in the process
+
+**Interpretation of results**
+Summary: Setting the results to have a rank higher than >0.99 only results in 1 movie to be recommended, namely Fight Club itself. Therefore a lower value of 0.40 was selected and it now shows 50 results. The results show mostly results of movies that I am not familiar with, however reading the summaries of the top recommended movies in the list, they have some similarities to Fight Club such as the movie being a thriler with some aspects of violence.
+
+Title: unfortunately there is not a movie showing with a similar title to Fight Club, therefore changing it to another movie "Titanic" to show some results, which shows 5 results of movies with some form of Titan in the title.
+
+Starring: recommender shows movies in which Brad Pitt is starring, in that sense the recommendation works good. I find it curious that Fight Club only get's a 0.46 ranking, because this is the movie that it is based on and therefore a rank of 1.00 is expected. 
+
